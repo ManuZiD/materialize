@@ -1,0 +1,70 @@
+.list {
+    margin: 8px 0;
+    overflow: hidden;
+
+    .list-item {
+        padding: 16px;
+        min-height: 48px;
+        font-size: 0.998em;
+        line-height: 1;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        
+        // Item for two and three line
+        .sub-item {
+            color: rgba(0, 0, 0, 0.51);
+            display: block;
+            font-size: 0.874em;
+        }
+        
+        .list-item-primary-content {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            box-sizing: border-box;
+        
+            i {
+                margin-right: 32px;
+            }
+            
+            .avatar {
+                width: 40px;
+                height: 40px;
+                margin-right: 16px;
+            }
+        
+        }
+        
+        .list-item-secondary-content {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-flow: column;
+            flex-flow: column;
+            -ms-flex-align: end;
+            align-items: flex-end;
+        }
+        
+    }
+    
+    .two-line, .three-line {
+        display: block;
+        min-height: 72px;
+        
+        span:first-child {
+            line-height: 20px;
+        }
+        
+        span:last-child {
+            line-height: 18px;
+        }
+    }
+    
+    .three-line {
+        min-height: 88px;
+    }
+
+}

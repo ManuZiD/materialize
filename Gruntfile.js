@@ -88,7 +88,7 @@ module.exports = function(grunt) {
           })
         ]
       },
-      expended: {
+      expanded: {
         src: 'dist/css/materialize.css'
       },
       min: {
@@ -521,7 +521,7 @@ module.exports = function(grunt) {
       release: {
         options: {
           position: 'top',
-          banner: "/*!\n * Materialize v"+ grunt.option( "newver" ) +" (http://materializecss.com)\n * Copyright 2014-2015 Materialize\n * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)\n */",
+          banner: "/*!\n * Materialize v"+ grunt.option( "newver" ) +" (http://materializecss.com)\n * Copyright 2014-2017 Materialize\n * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)\n */",
           linebreak: true
         },
         files: {
@@ -585,7 +585,7 @@ module.exports = function(grunt) {
       'copy',
       'sass:expanded',
       'sass:min',
-      'postcss:expended',
+      'postcss:expanded',
       'postcss:min',
       'concat:dist',
       'uglify:dist',
